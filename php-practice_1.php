@@ -4,6 +4,7 @@ $name = '角野琳音';
 echo "私の名前は「{$name}」です。";
 echo "\n";
 echo "\n";
+
 // Q2 四則演算
 $num = 5 * 4;
 
@@ -33,17 +34,21 @@ if ($device === 'linux') {
    
   echo "\n";
 echo "\n";
+
 // Q5 条件分岐-2 三項演算子
 $age = 20;
 echo $age >= 18 ? '成人です。' : '未成年です。';
 echo "\n";
 echo "\n";
 
+
+
 // Q6 配列
 $prefectures = ['北海道', '大阪府', '栃木県', '千葉県'];
 echo $prefectures[2]. "と" .$prefectures[3]. "は関東地方の都道府県です。";
 echo "\n";
 echo "\n";
+
 
 // Q7 連想配列-1
 $prefectures = [
@@ -57,9 +62,11 @@ $prefectures = [
   ];
 
 
-foreach ($prefectures as $capital )
+  foreach ($prefectures as $capital )
   echo $capital ."\n";
   echo "\n";
+
+
 
 // Q8 連想配列-2
 $prefectures = [
@@ -77,8 +84,10 @@ $prefectures = [
   }
   echo "\n";
   echo "\n";
+  
 
 // Q9 連想配列-3
+
 $prefectures = [
   "東京都"=> "新宿区",
   "神奈川県"=> "横浜市",
@@ -129,6 +138,7 @@ echo hello('安藤');
 echo "\n";
 echo "\n";
 
+
 // Q11 関数-2
 function calcTaxInPrice($price) {
   return $price * 1.1;
@@ -157,6 +167,8 @@ echo $num ."は" . distinguishNum($num);
 echo "\n";
 echo "\n";
 
+
+
 // Q13 関数とswitch文
 function evaluateGrade($Grade) {
   switch ($Grade) {
@@ -179,3 +191,5 @@ echo "\n";
 $result = evaluateGrade('D');
 echo $result;
 echo "\n";
+
+?>
